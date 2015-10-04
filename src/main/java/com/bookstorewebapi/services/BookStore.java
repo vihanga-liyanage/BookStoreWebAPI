@@ -13,6 +13,10 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import org.neo4j.cypher.javacompat.ExecutionEngine;
+import org.neo4j.cypher.javacompat.ExecutionResult;
+import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 
 /**
  *
@@ -24,13 +28,14 @@ public class BookStore {
     private DB db;
     private DBCollection collection;
     private String collectionName = "invoice";
+    private String neo4jDBPath = "~/src/test/resources/Data/Neo4jDBPath/default.graphdb";
     
     public BookStore(String host, int port, String dbName) {
         mongo = new MongoClient(host, port);
         db = mongo.getDB(dbName);
     }
     
-    public int mongoWriter(String csvFile) {
+    public String mongoWriter(String csvFile) {
         BufferedReader br = null;
         String line;
         String[] headLine = null, data;
@@ -39,7 +44,6 @@ public class BookStore {
         collection = db.getCollection(collectionName);
 
         try {
-
             br = new BufferedReader(new FileReader(csvFile));
             if ((line = br.readLine()) != null) {
                 headLine = line.split(csvSplitBy);
@@ -49,20 +53,18 @@ public class BookStore {
                 document = documentCreater(headLine, data);
                 collection.insert(document);
             }
-            return 1;
+            return "Done.";
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return 0;
+            return e.getMessage();
         } catch (IOException e) {
-            e.printStackTrace();
-            return 0;
+            return e.getMessage();
         } finally {
             if (br != null) {
                 try {
                     br.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    return e.getMessage();
                 }
             }
         }
@@ -76,5 +78,21 @@ public class BookStore {
             }
         }
         return document;
+    }
+    
+    public String getRecommends(String id){
+        /*
+        GraphDatabaseFactory graphDbFactory = new GraphDatabaseFactory();
+        GraphDatabaseService graphDb = graphDbFactory.newEmbeddedDatabase(neo4jDBPath);
+
+        ExecutionEngine execEngine = new ExecutionEngine(graphDb);
+        
+        String cypher = "MATCH (java:JAVA) RETURN java";
+        
+        ExecutionResult execResult = execEngine.execute(cypher);
+        String results = execResult.dumpToString();
+        System.out.println(results);
+                */
+        return "Recommends for customer " + id;
     }
 }

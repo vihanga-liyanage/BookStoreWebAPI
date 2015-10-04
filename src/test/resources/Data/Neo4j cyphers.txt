@@ -1,0 +1,30 @@
+MATCH (n:Customer)
+WITH n.customerId AS customerId, collect(n) AS nodes
+WHERE size(nodes) > 1
+FOREACH (n in tail(nodes) | DELETE n)
+
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as Customers create (c1:Customer {customerId:Customers.CustomerCode, customerName:Customers.CustomerName})
+
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as Books create (c1:Book {bookId:Books.BookCode, BookName:Books.BookName, bookCat:Books.BookCategoryCode, bookCatName:Books.BookCategoryName, bookPrice:Books.BookPrice})
+
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as Buys create (by1:Invoice {invoiceId:Buys.InvoiceCode, BookId:Buys.BookCode, customerId:Buys.CustomerCode})
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as Buys match (rel1:Invoice {customerId:Buys.CustomerCode}), (rel2:Customer {customerId:Buys.CustomerCode}) create (rel1) - [r:Purchase] -> (rel2)
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as Buys match (rel1:Invoice {BookId:Buys.BookCode}), (rel2:Book {bookId:Buys.BookCode}) create (rel1) - [r:Include] -> (rel2)
+
+
+=========
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as csvLine
+MERGE (cs:Customer {name: csvLine.CustomerName, id: csvLine.CustomerCode})
+MERGE (b:Book {name: csvLine.BookName, id:csvLine.BookCode, categoryID: csvLine.BookCategoryCode})
+MERGE (i:Invoice {id: csvLine.InvoiceCode, customerID: csvLine.CustomerCode, bookID: csvLine.BookCode})
+MERGE (c:Category {name: csvLine.BookCategoryName, id:csvLine.BookCategoryCode})
+
+load csv with headers from "file:F:/University/Second Year/Semester 2/Database 2/Assignment 1/Inputs/test3.csv" as csvLine match (rel1:Invoice {customerID:csvLine.CustomerCode}), (rel2:Customer {id:csvLine.CustomerCode}) create (rel1) - [r:Purchase] -> (rel2)
+
+
+

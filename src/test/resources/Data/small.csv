@@ -1,0 +1,101 @@
+InvoiceCode,CustomerCode,CustomerName,Invoice_Date,BookCode,BookName,BookCategoryCode,BookCategoryName,Quantity,BookPrice
+INV1,1,Aasun,1/2/2015,1,Architecture_3,2,Architecture,1,890
+INV2,2,Basun,1/3/2015,2,Architecture_2,1,Architecture,1,760
+INV3,3,Casun,1/4/2015,8,Agriculture_4,3,Agriculture,2,895
+INV4,4,Dasun,1/5/2015,6,Agriculture_2,1,Agriculture,2,675
+INV5,5,Easun,1/6/2015,12,Biography & Memoir_4,3,Biography & Memoir,4,876
+INV6,6,Fasun,1/7/2015,12,Biography & Memoir_4,3,Biography & Memoir,4,876
+INV7,7,Gasun,1/8/2015,11,Biography & Memoir_3,2,Biography & Memoir,2,896
+INV8,8,Hasun,1/9/2015,1,Agriculture_3,2,Agriculture,4,765
+INV9,9,Iasun,1/10/2015,1,Architecture_3,2,Architecture,2,890
+INV10,10,Jasun,1/11/2015,4,Architecture_4,3,Architecture,5,980
+INV11,11,Kasun,1/12/2015,15,Business_3,2,Business,4,654
+INV12,12,Lasun,1/13/2015,14,Business_2,1,Business,3,650
+INV13,13,Masun,1/14/2015,12,Biography & Memoir_4,3,Biography & Memoir,4,876
+INV14,14,Nasun,1/15/2015,3,Architecture_1,0,Architecture,2,450
+INV15,15,Oasun,1/16/2015,24,Medical 4,3,Medical,1,950
+INV16,16,Pasun,1/17/2015,14,Business_2,1,Business,5,650
+INV17,17,Qasun,1/18/2015,9,Biography & Memoir_1,0,Biography & Memoir,5,340
+INV18,18,Rasun,1/19/2015,5,Agriculture_1,0,Agriculture,1,235
+INV19,19,Sasun,1/20/2015,15,Business_3,2,Business,4,654
+INV20,20,Tasun,1/21/2015,9,Biography & Memoir_1,0,Biography & Memoir,3,340
+INV21,21,Uasun,1/22/2015,3,Architecture_1,0,Architecture,2,450
+INV22,22,Vasun,1/23/2015,9,Biography & Memoir_1,0,Biography & Memoir,4,340
+INV23,23,Wasun,1/24/2015,19,Children's Non-Fiction_3,2,Children's Non-Fiction,2,890
+INV24,24,Xasun,1/25/2015,24,Medical 4,3,Medical,4,950
+INV25,25,Yasun,1/26/2015,9,Biography & Memoir_1,0,Biography & Memoir,2,340
+INV26,26,Zasun,1/27/2015,1,Architecture_3,2,Architecture,4,890
+INV27,27,[asun,1/28/2015,2,Architecture_2,1,Architecture,4,760
+INV28,28,\asun,1/29/2015,7,Agriculture_3,2,Agriculture,1,765
+INV29,0,@asun,1/30/2015,16,Business_4,3,Business,3,896
+INV30,1,Aasun,1/31/2015,7,Agriculture_3,2,Agriculture,5,765
+INV31,2,Basun,1/1/2015,8,Agriculture_4,3,Agriculture,3,895
+INV32,3,Casun,2/2/2015,5,Agriculture_1,0,Agriculture,5,235
+INV33,4,Dasun,2/3/2015,9,Biography & Memoir_1,0,Biography & Memoir,4,340
+INV34,5,Easun,2/4/2015,7,Agriculture_3,2,Agriculture,4,765
+INV35,6,Fasun,2/5/2015,6,Agriculture_2,1,Agriculture,2,675
+INV36,7,Gasun,2/6/2015,23,Medical 3,2,Medical,5,780
+INV37,8,Hasun,2/7/2015,10,Biography & Memoir_2,1,Biography & Memoir,4,765
+INV38,9,Iasun,2/8/2015,3,Architecture_1,0,Architecture,4,450
+INV39,10,Jasun,2/9/2015,1,Architecture_3,2,Architecture,1,890
+INV40,11,Kasun,2/10/2015,16,Business_4,3,Business,5,896
+INV41,12,Lasun,2/11/2015,14,Business_2,1,Business,5,650
+INV42,13,Masun,2/12/2015,14,Business_2,1,Business,4,650
+INV43,14,Nasun,2/13/2015,18,Children's Non-Fiction_2,1,Children's Non-Fiction,5,870
+INV44,15,Oasun,2/14/2015,10,Biography & Memoir_2,1,Biography & Memoir,5,765
+INV45,16,Pasun,2/15/2015,22,Medical 2,1,Medical,3,560
+INV46,17,Qasun,2/16/2015,4,Architecture_4,3,Architecture,1,980
+INV47,18,Rasun,2/17/2015,3,Architecture_1,0,Architecture,3,450
+INV48,19,Sasun,2/18/2015,4,Architecture_4,3,Architecture,2,980
+INV49,20,Tasun,2/19/2015,8,Agriculture_4,3,Agriculture,3,895
+INV50,21,Uasun,2/20/2015,19,Children's Non-Fiction_3,2,Children's Non-Fiction,5,890
+INV51,22,Vasun,2/21/2015,22,Medical 2,1,Medical,2,560
+INV52,23,Wasun,2/22/2015,7,Agriculture_3,2,Agriculture,4,765
+INV53,24,Xasun,2/23/2015,17,Children's Non-Fiction_1,0,Children's Non-Fiction,2,345
+INV54,25,Yasun,2/24/2015,7,Agriculture_3,2,Agriculture,5,765
+INV55,26,Zasun,2/25/2015,9,Biography & Memoir_1,0,Biography & Memoir,1,340
+INV56,27,[asun,2/26/2015,4,Architecture_4,3,Architecture,3,980
+INV57,28,\asun,2/27/2015,15,Business_3,2,Business,3,654
+INV58,0,@asun,2/28/2015,1,Architecture_3,2,Architecture,4,890
+INV59,1,Aasun,2015-02-29,13,Business_1,0,Business,5,450
+INV60,2,Basun,2015-02-30,18,Children's Non-Fiction_2,1,Children's Non-Fiction,3,870
+INV61,3,Casun,2015-02-31,19,Children's Non-Fiction_3,2,Children's Non-Fiction,3,890
+INV62,4,Dasun,2/1/2015,22,Medical 2,1,Medical,2,560
+INV63,5,Easun,3/2/2015,6,Agriculture_2,1,Agriculture,3,675
+INV64,6,Fasun,3/3/2015,1,Architecture_3,2,Architecture,1,890
+INV65,7,Gasun,3/4/2015,10,Biography & Memoir_2,1,Biography & Memoir,4,765
+INV66,8,Hasun,3/5/2015,5,Agriculture_1,0,Agriculture,1,235
+INV67,9,Iasun,3/6/2015,17,Children's Non-Fiction_1,0,Children's Non-Fiction,5,345
+INV68,10,Jasun,3/7/2015,3,Architecture_1,0,Architecture,5,450
+INV69,11,Kasun,3/8/2015,4,Architecture_4,3,Architecture,5,980
+INV70,12,Lasun,3/9/2015,22,Medical 2,1,Medical,5,560
+INV71,13,Masun,3/10/2015,24,Medical 4,3,Medical,3,950
+INV72,14,Nasun,3/11/2015,18,Children's Non-Fiction_2,1,Children's Non-Fiction,1,870
+INV73,15,Oasun,3/12/2015,10,Biography & Memoir_2,1,Biography & Memoir,3,765
+INV74,16,Pasun,3/13/2015,22,Medical 2,1,Medical,4,560
+INV75,17,Qasun,3/14/2015,16,Business_4,3,Business,1,896
+INV76,18,Rasun,3/15/2015,18,Children's Non-Fiction_2,1,Children's Non-Fiction,3,870
+INV77,19,Sasun,3/16/2015,19,Children's Non-Fiction_3,2,Children's Non-Fiction,4,890
+INV78,20,Tasun,3/17/2015,12,Biography & Memoir_4,3,Biography & Memoir,2,876
+INV79,21,Uasun,3/18/2015,20,Children's Non-Fiction_4,3,Children's Non-Fiction,4,780
+INV80,22,Vasun,3/19/2015,9,Biography & Memoir_1,0,Biography & Memoir,4,340
+INV81,23,Wasun,3/20/2015,8,Agriculture_4,3,Agriculture,5,895
+INV82,24,Xasun,3/21/2015,24,Medical 4,3,Medical,1,950
+INV83,25,Yasun,3/22/2015,2,Architecture_2,1,Architecture,1,760
+INV84,26,Zasun,3/23/2015,11,Biography & Memoir_3,2,Biography & Memoir,5,896
+INV85,27,[asun,3/24/2015,12,Biography & Memoir_4,3,Biography & Memoir,4,876
+INV86,28,\asun,3/25/2015,10,Biography & Memoir_2,1,Biography & Memoir,2,765
+INV87,0,@asun,3/26/2015,4,Architecture_4,3,Architecture,4,980
+INV88,1,Aasun,3/27/2015,13,Business_1,0,Business,3,450
+INV89,2,Basun,3/28/2015,5,Agriculture_1,0,Agriculture,3,235
+INV90,3,Casun,3/29/2015,10,Biography & Memoir_2,1,Biography & Memoir,3,765
+INV91,4,Dasun,3/30/2015,21,Medical 1,0,Medical,3,430
+INV92,5,Easun,3/31/2015,24,Medical 4,3,Medical,5,950
+INV93,6,Fasun,3/1/2015,5,Agriculture_1,0,Agriculture,1,235
+INV94,7,Gasun,4/2/2015,15,Business_3,2,Business,1,654
+INV95,8,Hasun,4/3/2015,9,Biography & Memoir_1,0,Biography & Memoir,4,340
+INV96,9,Iasun,4/4/2015,17,Children's Non-Fiction_1,0,Children's Non-Fiction,5,345
+INV97,10,Jasun,4/5/2015,18,Children's Non-Fiction_2,1,Children's Non-Fiction,3,870
+INV98,11,Kasun,4/6/2015,10,Biography & Memoir_2,1,Biography & Memoir,4,765
+INV99,12,Lasun,4/7/2015,5,Agriculture_1,0,Agriculture,5,235
+INV100,13,Masun,4/8/2015,4,Architecture_4,3,Architecture,1,980
